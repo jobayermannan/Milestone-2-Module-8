@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-in Form</title>
+    <script
+      src="https://kit.fontawesome.com/eb2da153d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .grand-p {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+      }
+      .parrent {
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+
+        /* align-items:center;
+     
+          width: %;
+            border: 2px solid green;
+            height: 600px;
+          } */
+      }
+      .parrent input {
+        margin-top: 1em;
+        padding: 2px 10px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      #cc {
+        background-color: aqua;
+        border: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: red;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="">Home</a>
+          <a href="">Shop</a>
+          <a href="">User</a>
+        </div>
+
+        <div>
+          <a href=""><i class="fa-regular fa-user"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </nav>
+    </header>
+    <div class="grand-p">
+      <form class="parrent">
+        <h2>Please Log in</h2>
+        <input class="child" type="email" placeholder="your email" required />
+        <input
+          class="child"
+          type="password"
+          placeholder="your password"
+          required
+        />
+        <input id="cc" class="child" type="submit" value="Log in" />
+      </form>
+    </div>
+  </body>
+</html>
